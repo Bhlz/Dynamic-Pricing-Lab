@@ -10,7 +10,7 @@ A fully functional demo that simulates realistic e-commerce demand, trains gradi
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Install dependencies
@@ -28,7 +28,7 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -50,20 +50,20 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 📊 Dashboard Tabs
+##  Dashboard Tabs
 
 | Tab | What it shows |
 |-----|---------------|
-| **🖥 Live** | KPI cards (price, revenue/profit, stock, traffic) + price & objective time series with shock markers |
-| **🧠 Think** | Demand vs price curve with p10–p90 uncertainty band + objective curve with vertical lines at current & recommended price |
-| **📊 Scoreboard** | Bar chart of all 101 candidate prices vs expected objective, highlighted chosen price with rich tooltips |
-| **🎯 Belief** | Monte Carlo belief distribution — P(each price is optimal) — drives Thompson Sampling exploration |
-| **🔍 Update** | Prediction (p10/mean/p90) vs actual demand, rolling error chart, drift detection alerts |
-| **📈 Baselines** | Cumulative optimizer vs Fixed-$100 vs Competitor−$1 baselines with uplift % |
+| ** Live** | KPI cards (price, revenue/profit, stock, traffic) + price & objective time series with shock markers |
+| ** Think** | Demand vs price curve with p10–p90 uncertainty band + objective curve with vertical lines at current & recommended price |
+| ** Scoreboard** | Bar chart of all 101 candidate prices vs expected objective, highlighted chosen price with rich tooltips |
+| ** Belief** | Monte Carlo belief distribution — P(each price is optimal) — drives Thompson Sampling exploration |
+| ** Update** | Prediction (p10/mean/p90) vs actual demand, rolling error chart, drift detection alerts |
+| ** Baselines** | Cumulative optimizer vs Fixed-$100 vs Competitor−$1 baselines with uplift % |
 
 ---
 
-## ⚙️ Controls
+##  Controls
 
 | Control | Options |
 |---------|---------|
@@ -77,7 +77,7 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 🔬 How It Works
+##  How It Works
 
 1. **Historical data** (180 days × hourly) is generated with realistic confounding (high traffic → higher price, promos → lower price)
 2. **3 Gradient Boosted models** are trained: mean demand, quantile p10, quantile p90
@@ -91,7 +91,7 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
 | File | Purpose |
 |------|---------|
@@ -105,7 +105,7 @@ The app opens at **http://localhost:8501**.
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - **No real data** — everything is simulated but follows realistic demand patterns
 - Uses **scikit-learn** only (no LightGBM dependency issues)
