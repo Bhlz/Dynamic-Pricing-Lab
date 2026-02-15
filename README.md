@@ -1,4 +1,4 @@
-# ⚡ Dynamic Pricing Lab
+#  Dynamic Pricing Lab
 
 **Real-time pricing optimization with demand uncertainty, Monte Carlo belief distributions, and Thompson Sampling.**
 
